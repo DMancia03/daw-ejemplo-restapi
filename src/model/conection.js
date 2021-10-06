@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const dataConection = {
-    host: 'remotemysql.com',
-    user: '2DBLrjyvRY',
-    password: 'XquSNeC1BL',
-    database: '2DBLrjyvRY'
+    host: 'bzzdly20algjgyzyo3p6-mysql.services.clever-cloud.com',
+    user: 'uv69cum5gafsqgiz',
+    password: 'q1QSF7goA399DiGJ16zH',
+    database: 'bzzdly20algjgyzyo3p6'
 }
 
 const mysqlConection = mysql.createConnection(dataConection);
