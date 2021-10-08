@@ -7,22 +7,15 @@ const dataConection = {
     database: 'bzzdly20algjgyzyo3p6'
 }
 
-const pool = mysql.createPool(dataConection);
+const mysqlConection = mysql.createConnection(dataConection);
 
-/*pool.getConection( function(conection) {
-    pool.releaseConnection(conection);
-    console.log('DB connected');
-});*/
-
-//const getConection = mysql.createConnection(dataConection);
-
-/*mysqlConection.connect(function(error){
+mysqlConection.connect(function(error){
     if(error){
         console.log(error);
         return;
     }else{
         console.log('DB connected');
     }
-});*/
+});
 
-module.exports = pool;
+module.exports = mysqlConection;
