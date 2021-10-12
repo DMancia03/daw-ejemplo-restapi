@@ -16,7 +16,13 @@ d304 = Eliminar un registro
 
 //Defecto
 router.get('/', (req, res) => {
-    res.json({ "estado": "La api esta en /api" });
+    res.json({ 
+        "SELECT ALL":"/api",
+        "SELECT ONE":"/api/d301/:id",
+        "INSERT":"/api/d302",
+        "UPDATE":"/api/d303/:id",
+        "DELETE":"/api/d304/:id"
+    });
 });
 
 //d300
